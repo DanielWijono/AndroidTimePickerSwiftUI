@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		0D9CBA4D2B8EDAAC00880FAF /* AndroidSwiftUITimePickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CBA4C2B8EDAAC00880FAF /* AndroidSwiftUITimePickerApp.swift */; };
-		0D9CBA4F2B8EDAAC00880FAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CBA4E2B8EDAAC00880FAF /* ContentView.swift */; };
 		0D9CBA512B8EDAAE00880FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9CBA502B8EDAAE00880FAF /* Assets.xcassets */; };
 		0D9CBA542B8EDAAE00880FAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9CBA532B8EDAAE00880FAF /* Preview Assets.xcassets */; };
+		0D9CBA5B2B8EDB3400880FAF /* CustomTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CBA5A2B8EDB3400880FAF /* CustomTimePicker.swift */; };
+		0D9CBA5E2B8EDE7B00880FAF /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CBA5D2B8EDE7B00880FAF /* View+Extensions.swift */; };
+		0D9CBA602B8EF15800880FAF /* CircularHourPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CBA5F2B8EF15800880FAF /* CircularHourPicker.swift */; };
+		0D9CBA622B8EF18B00880FAF /* CircularMinutePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CBA612B8EF18B00880FAF /* CircularMinutePicker.swift */; };
+		0D9CBA642B8F9BFE00880FAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CBA632B8F9BFE00880FAF /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D9CBA492B8EDAAC00880FAF /* AndroidSwiftUITimePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndroidSwiftUITimePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9CBA4C2B8EDAAC00880FAF /* AndroidSwiftUITimePickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidSwiftUITimePickerApp.swift; sourceTree = "<group>"; };
-		0D9CBA4E2B8EDAAC00880FAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0D9CBA502B8EDAAE00880FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D9CBA532B8EDAAE00880FAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D9CBA5A2B8EDB3400880FAF /* CustomTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimePicker.swift; sourceTree = "<group>"; };
+		0D9CBA5D2B8EDE7B00880FAF /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		0D9CBA5F2B8EF15800880FAF /* CircularHourPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularHourPicker.swift; sourceTree = "<group>"; };
+		0D9CBA612B8EF18B00880FAF /* CircularMinutePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularMinutePicker.swift; sourceTree = "<group>"; };
+		0D9CBA632B8F9BFE00880FAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +59,14 @@
 		0D9CBA4B2B8EDAAC00880FAF /* AndroidSwiftUITimePicker */ = {
 			isa = PBXGroup;
 			children = (
+				0D9CBA5C2B8EDE6A00880FAF /* Extensions */,
 				0D9CBA4C2B8EDAAC00880FAF /* AndroidSwiftUITimePickerApp.swift */,
-				0D9CBA4E2B8EDAAC00880FAF /* ContentView.swift */,
+				0D9CBA5A2B8EDB3400880FAF /* CustomTimePicker.swift */,
 				0D9CBA502B8EDAAE00880FAF /* Assets.xcassets */,
 				0D9CBA522B8EDAAE00880FAF /* Preview Content */,
+				0D9CBA5F2B8EF15800880FAF /* CircularHourPicker.swift */,
+				0D9CBA612B8EF18B00880FAF /* CircularMinutePicker.swift */,
+				0D9CBA632B8F9BFE00880FAF /* ContentView.swift */,
 			);
 			path = AndroidSwiftUITimePicker;
 			sourceTree = "<group>";
@@ -65,6 +77,14 @@
 				0D9CBA532B8EDAAE00880FAF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0D9CBA5C2B8EDE6A00880FAF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0D9CBA5D2B8EDE7B00880FAF /* View+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D9CBA4F2B8EDAAC00880FAF /* ContentView.swift in Sources */,
+				0D9CBA602B8EF15800880FAF /* CircularHourPicker.swift in Sources */,
 				0D9CBA4D2B8EDAAC00880FAF /* AndroidSwiftUITimePickerApp.swift in Sources */,
+				0D9CBA642B8F9BFE00880FAF /* ContentView.swift in Sources */,
+				0D9CBA5E2B8EDE7B00880FAF /* View+Extensions.swift in Sources */,
+				0D9CBA622B8EF18B00880FAF /* CircularMinutePicker.swift in Sources */,
+				0D9CBA5B2B8EDB3400880FAF /* CustomTimePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
