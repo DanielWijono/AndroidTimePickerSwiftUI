@@ -62,11 +62,11 @@
 				0D9CBA5C2B8EDE6A00880FAF /* Extensions */,
 				0D9CBA4C2B8EDAAC00880FAF /* AndroidSwiftUITimePickerApp.swift */,
 				0D9CBA5A2B8EDB3400880FAF /* CustomTimePicker.swift */,
+				0D9CBA632B8F9BFE00880FAF /* ContentView.swift */,
 				0D9CBA502B8EDAAE00880FAF /* Assets.xcassets */,
 				0D9CBA522B8EDAAE00880FAF /* Preview Content */,
 				0D9CBA5F2B8EF15800880FAF /* CircularHourPicker.swift */,
 				0D9CBA612B8EF18B00880FAF /* CircularMinutePicker.swift */,
-				0D9CBA632B8F9BFE00880FAF /* ContentView.swift */,
 			);
 			path = AndroidSwiftUITimePicker;
 			sourceTree = "<group>";

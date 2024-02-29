@@ -20,7 +20,7 @@ public struct CircularMinutePicker: View {
         ZStack {
           if minute == selectedMinute {
             Circle()
-              .foregroundColor(.gray)
+              .foregroundColor(.teal)
               .frame(width: 40, height: 40)
           }
           Text("\(minute)")
@@ -39,7 +39,7 @@ public struct CircularMinutePicker: View {
         path.move(to: CGPoint(x: geometry.size.width / 2, y: geometry.size.height / 2))
         path.addLine(to: lineEnd(for: selectedMinute, in: geometry.size))
       }
-      .stroke(Color.gray, lineWidth: 2)
+      .stroke(Color.teal, lineWidth: 2)
       .gesture(
         DragGesture(minimumDistance: 0)
           .onChanged { value in
@@ -53,7 +53,7 @@ public struct CircularMinutePicker: View {
           }
       )
       Circle()
-        .fill(Color.gray)
+        .fill(Color.teal)
         .frame(width: 15, height: 15)
         .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
     }
