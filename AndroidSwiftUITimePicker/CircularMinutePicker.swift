@@ -49,7 +49,7 @@ public struct CircularMinutePicker: View {
             if angle < 0 {
               angle += 2 * .pi
             }
-            selectedMinute = Int(round((angle * 12) / (2 * .pi))) % 12 * 5
+            selectedMinute = Int((angle * 60) / (2 * .pi)) % 60
           }
       )
       Circle()
@@ -77,6 +77,6 @@ public struct CircularMinutePicker: View {
   }
   
   func minuteAngle(for minute: Int) -> CGFloat {
-    2 * CGFloat.pi / 12 * CGFloat(minute / 5)
+    (2 * CGFloat.pi / 60) * CGFloat(minute)
   }
 }
